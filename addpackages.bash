@@ -5,7 +5,7 @@
 #
 
 sudo apt -y install emacs25-nox
-sudo snap -y install go --classic
+snap install go --classic
 sudo apt -y install zip
 sudo apt -y install unzip
 sudo apt -y install gcc
