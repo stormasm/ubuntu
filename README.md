@@ -1,6 +1,5 @@
-# ubuntu
 
-oh well....
+### Scripts for Ubuntu
 
-peaches and cream
-
+* script to add packages
+* script to add a new user
