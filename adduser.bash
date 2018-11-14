@@ -27,7 +27,7 @@ echo 'AllowUsers root michael' >> sshd_config
 # Any time you change the sshd_config file you must run this command:
 sudo systemctl restart sshd.service
 
-Then add them to the sudoers group
+#Then add them to the sudoers group
 usermod -aG sudo michael
 
 # Relevant Links:
