@@ -29,7 +29,7 @@ alias n='node'
 alias p='python'
 alias r='ruby'
 
-alias sp='source /Users/ma/.profile'
+alias sp='source ~/.bash_aliases'
 alias t=date
 
 alias y='yarn'
