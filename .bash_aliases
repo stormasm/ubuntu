@@ -29,7 +29,8 @@ alias n='node'
 alias p='python'
 alias r='ruby'
 
-alias sp='source ~/.bash_aliases'
+alias sp='source /home/michael/ubuntu/.bash_aliases'
+alias spme='source ~/.bash_aliases'
 alias t=date
 
 alias y='yarn'
@@ -60,6 +61,7 @@ alias gitsubmodule='git submodule update --init --recursive'
 
 ### Docker commands
 alias dps='docker ps'
+alias dinfo='docker info'
 alias dkill='docker kill'
 
 alias dockreds='docker run --name rediserver -d redis'
