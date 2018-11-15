@@ -58,8 +58,6 @@ alias grso='git remote show origin'
 alias gs='git status'
 alias gitsubmodule='git submodule update --init --recursive'
 
-
-
-
-
-
+### Docker commands
+alias dockreds='docker run --name rediserver -d redis'
+alias dockredc='docker run -it --link redisc:redis --rm redis redis-cli -h redis -p 6379'
