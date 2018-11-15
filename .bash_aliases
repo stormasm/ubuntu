@@ -59,5 +59,8 @@ alias gs='git status'
 alias gitsubmodule='git submodule update --init --recursive'
 
 ### Docker commands
+alias dps='docker ps'
+alias dkill='docker kill'
+
 alias dockreds='docker run --name rediserver -d redis'
 alias dockredc='docker run -it --link rediserver:redis --rm redis redis-cli -h redis -p 6379'
