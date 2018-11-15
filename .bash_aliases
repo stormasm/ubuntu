@@ -2,7 +2,7 @@
 
 alias c='clear'
 alias cp='cp -p'
-alias cpba='cp /home/michael/ubuntu/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases'
+alias cpba='cp /home/michael/ubuntu/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases; source .bash_aliases'
 alias e='emacs'
 alias gs='git status'
 alias h='history'
