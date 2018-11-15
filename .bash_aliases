@@ -2,6 +2,7 @@
 
 alias c='clear'
 alias cp='cp -p'
+alias cpba='cp /home/michael/ubuntu/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases'
 alias e='emacs'
 alias gs='git status'
 alias h='history'
@@ -64,5 +65,5 @@ alias dps='docker ps'
 alias dinfo='docker info'
 alias dkill='docker kill'
 
-alias dockreds='docker run --name rediserver -d redis'
-alias dockredc='docker run -it --link rediserver:redis --rm redis redis-cli -h redis -p 6379'
+alias dredis='docker run --name rediserver -d redis'
+alias dredisc='docker run -it --link rediserver:redis --rm redis redis-cli -h redis -p 6379'
