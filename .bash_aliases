@@ -29,6 +29,7 @@ alias m='make'
 alias n='node'
 alias p='python'
 alias r='ruby'
+alias redisc='redis-cli'
 
 alias sp='source /home/michael/ubuntu/.bash_aliases'
 alias spme='source ~/.bash_aliases'
