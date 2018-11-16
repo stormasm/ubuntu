@@ -4,8 +4,11 @@
 # Run this file as the root user
 #
 
-sudo apt -y install emacs25-nox
 snap install go --classic
+snap install docker
+
+sudo apt -y install emacs25-nox
+sudo apt -y install redis-server
 sudo apt -y install zip
 sudo apt -y install unzip
 sudo apt -y install gcc
