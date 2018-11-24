@@ -1,3 +1,10 @@
+
+# Golang aliases
+
+alias gop='export GOPATH=${PWD}; export GOBIN=${PWD}/bin; PATH=$PATH:$GOPATH/bin'
+alias gopc='env | grep GOPATH'
+
+
 # User specific aliases and functions
 
 alias c='clear'
