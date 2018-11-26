@@ -4,6 +4,12 @@
 # Run this file as the root user
 #
 
+#
+# Be sure you start changing directories
+# Copy this file to a known location
+#
+cp .bash_aliases /tmp
+
 # First add in a new user:
 sudo adduser michael
 
@@ -30,7 +36,7 @@ sudo systemctl restart sshd.service
 #Then add them to the sudoers group
 usermod -aG sudo michael
 
-cp .bash_aliases /home/michael
+cp /tmp/.bash_aliases /home/michael
 
 # Relevant Links:
 # https://help.ubuntu.com/lts/serverguide/user-management.html.en
