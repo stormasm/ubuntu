@@ -13,5 +13,11 @@ sudo apt -y install make
 sudo apt -y install pkg-config
 
 snap install go --classic
+
+#
+# For docker and kubernetes
+#
+
+snap install lxd
 snap install docker
 snap install conjure-up --classic
