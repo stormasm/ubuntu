@@ -30,5 +30,7 @@ sudo systemctl restart sshd.service
 #Then add them to the sudoers group
 usermod -aG sudo michael
 
+cp ./bash_aliases /home/michael
+
 # Relevant Links:
 # https://help.ubuntu.com/lts/serverguide/user-management.html.en
