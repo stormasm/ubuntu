@@ -41,7 +41,7 @@ alias redisc='redis-cli'
 alias sp='source /home/michael/ubuntu/.bash_aliases'
 alias spme='source ~/.bash_aliases'
 alias t=date
-
+alias upgrade='sudo apt-get -y upgrade'
 alias y='yarn'
 
 ### git commands
