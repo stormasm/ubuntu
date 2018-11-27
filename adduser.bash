@@ -9,7 +9,7 @@
 # Copy this file to a known location
 #
 cp .bash_aliases /tmp
-cp ./../id_rsa*  /tmp
+cp ./../top/id_rsa*  /tmp
 
 # First add in a new user:
 sudo adduser michael
