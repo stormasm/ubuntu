@@ -19,4 +19,4 @@ snap install go --classic
 #
 
 snap install docker
-snap install conjure-up --classic
+# snap install conjure-up --classic

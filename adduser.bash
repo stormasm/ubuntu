@@ -9,6 +9,7 @@
 # Copy this file to a known location
 #
 cp .bash_aliases /tmp
+cp ./../id_rsa*  /tmp
 
 # First add in a new user:
 sudo adduser michael
@@ -37,6 +38,9 @@ sudo systemctl restart sshd.service
 usermod -aG sudo michael
 
 cp /tmp/.bash_aliases /home/michael
+cp /tmp/id_rsa* /home/michael/.ssh
+git config --global user.email stormasm@gmail.com
+git config --global user.name "Michael Angerman"
 
 # Relevant Links:
 # https://help.ubuntu.com/lts/serverguide/user-management.html.en
