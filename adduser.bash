@@ -47,9 +47,12 @@ sudo chgrp michael id_*
 git config --global user.email stormasm@gmail.com
 git config --global user.name "Michael Angerman"
 
-sudo groupadd docker
-sudo usermod -aG docker michael
-sudo systemctl restart snap.docker.dockerd.service
+#
+# No longer using the snap version of docker
+#
+# sudo groupadd docker
+# sudo usermod -aG docker michael
+# sudo systemctl restart snap.docker.dockerd.service
 
 # Relevant Links:
 # https://help.ubuntu.com/lts/serverguide/user-management.html.en
