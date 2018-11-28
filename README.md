@@ -16,12 +16,12 @@ adduser.bash
 adddocker.bash
 ```
 
-#### Script to Add the Container Runtime Interface [https://kubernetes.io/docs/setup/cri/](CRIO)
+#### Script to Add the Container Runtime Interface [CRIO](https://kubernetes.io/docs/setup/cri/)
 ```
 addcrio.bash
 ```
 
-#### Script to Install [https://kubernetes.io/docs/setup/independent/install-kubeadm/](Kubeadm)
+#### Script to Install [Kubeadm](https://kubernetes.io/docs/setup/independent/install-kubeadm/)
 ```
 addk8s.bash
 ```
