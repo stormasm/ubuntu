@@ -21,7 +21,7 @@ adddocker.bash
 addcrio.bash
 ```
 
-#### Script to Install [Kubeadm](https://kubernetes.io/docs/setup/independent/install-kubeadm/)
+#### Script to Install [kubeadm, kubelet, kubectl](https://kubernetes.io/docs/setup/independent/install-kubeadm/)
 ```
 addk8s.bash
 ```
