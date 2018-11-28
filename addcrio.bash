@@ -38,6 +38,9 @@ systemctl start crio
 # This will be used to test if the above crio is working
 # https://github.com/kubernetes-sigs/cri-o/blob/master/tutorial.md#ensure-the-crio-service-is-running
 #
+# And here is the command to run...
+# crictl --runtime-endpoint unix:///var/run/crio/crio.sock version
+
 VERSION="v1.12.0"
 wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
 sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
