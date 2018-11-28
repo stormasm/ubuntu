@@ -38,8 +38,11 @@ sudo systemctl restart sshd.service
 usermod -aG sudo michael
 
 cp /tmp/.bash_aliases /home/michael
-cp /tmp/id_rsa* /home/michael/.ssh
+cd /home/michael
+sudo chown michael .bash_aliases
+sudo chgrp michael .bash_aliases
 
+cp /tmp/id_rsa* /home/michael/.ssh
 cd /home/michael/.ssh
 sudo chown michael id_*
 sudo chgrp michael id_*
