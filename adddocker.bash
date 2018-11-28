@@ -33,6 +33,9 @@ EOF
 
 mkdir -p /etc/systemd/system/docker.service.d
 
+# Add michael so he can run docker
+sudo usermod -aG docker michael
+
 # Restart docker.
 systemctl daemon-reload
 systemctl restart docker
