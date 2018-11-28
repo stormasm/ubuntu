@@ -1,5 +1,7 @@
 #
-# Run these commands on master prior to running any
+# Run these commands on master
+# AS A REGULAR USER such as michael
+# prior to running any
 #
 # kubeadm join commands on the client nodes...
 
