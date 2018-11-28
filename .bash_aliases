@@ -9,7 +9,7 @@ alias gopc='env | grep GOPATH'
 
 alias c='clear'
 alias cp='cp -p'
-alias cpba='cp .bash_aliases /home/michael'
+alias cpba='cp .bash_aliases /home/michael; source .bash_aliases'
 alias cpbar='cp /home/michael/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases; source .bash_aliases'
 alias e='emacs'
 alias gs='git status'
