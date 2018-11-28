@@ -5,7 +5,7 @@
 # or install Docker CE 18.06 from Docker's repositories for Ubuntu or Debian:
 
 ## Install prerequisites.
-apt-get update && apt-get install apt-transport-https ca-certificates curl software-properties-common
+apt-get update && apt-get -y install apt-transport-https ca-certificates curl software-properties-common
 
 ## Download GPG key.
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
@@ -17,7 +17,7 @@ add-apt-repository \
    stable"
 
 ## Install docker.
-apt-get update && apt-get install docker-ce=18.06.0~ce~3-0~ubuntu
+apt-get update && apt-get -y install docker-ce=18.06.0~ce~3-0~ubuntu
 
 # Setup daemon.
 cat > /etc/docker/daemon.json <<EOF
