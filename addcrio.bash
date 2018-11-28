@@ -28,3 +28,17 @@ apt-get -y install cri-o-1.11
 
 # Start CRI-O
 systemctl start crio
+
+#
+# From here
+# https://github.com/kubernetes-sigs/cri-tools
+# https://github.com/kubernetes-sigs/cri-tools/blob/master/docs/crictl.md
+#
+#
+# This will be used to test if the above crio is working
+# https://github.com/kubernetes-sigs/cri-o/blob/master/tutorial.md#ensure-the-crio-service-is-running
+#
+VERSION="v1.12.0"
+wget https://github.com/kubernetes-sigs/cri-tools/releases/download/$VERSION/crictl-$VERSION-linux-amd64.tar.gz
+sudo tar zxvf crictl-$VERSION-linux-amd64.tar.gz -C /usr/local/bin
+rm -f crictl-$VERSION-linux-amd64.tar.gz
