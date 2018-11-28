@@ -38,6 +38,7 @@ alias p='python'
 alias r='ruby'
 alias redisc='redis-cli'
 
+alias sp='source .bash_aliases'
 alias spme='source ~/.bash_aliases'
 alias t=date
 alias upgrade='sudo apt-get -y upgrade'
@@ -45,7 +46,6 @@ alias y='yarn'
 
 ### k8s specific commands
 
-alias sp='source /mnt/k8s/ubuntu/.bash_aliases'
 alias ub='cd /mnt/k8s/ubuntu'
 alias ubc='cd /mnt/k8sc1/ubuntu'
 alias ubc1='cd /mnt/k8sc1/ubuntu'
