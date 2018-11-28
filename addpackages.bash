@@ -16,8 +16,12 @@ sudo apt -y install pkg-config
 snap install go --classic
 
 #
+# We are now installing docker
+# with a separate script
+# From here
+# https://kubernetes.io/docs/setup/cri/
+# This is legacy
 # For docker and kubernetes
 #
-
-snap install docker
+# snap install docker
 # snap install conjure-up --classic
