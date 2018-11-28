@@ -47,6 +47,8 @@ alias y='yarn'
 
 alias sp='source /mnt/k8s/ubuntu/.bash_aliases'
 alias ub='cd /mnt/k8s/ubuntu'
+alias ubc='cd /mnt/k8sc1/ubuntu'
+alias ubc1='cd /mnt/k8sc1/ubuntu'
 alias k8s='cd /mnt/k8s'
 alias k8sc='cd /mnt/k8sc1'
 alias k8sc1='cd /mnt/k8sc1'
