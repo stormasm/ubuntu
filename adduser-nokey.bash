@@ -10,9 +10,8 @@
 #
 cp .bash_aliases /tmp
 
-# No id_rsa* keys available
-#
-# cp ./../id_rsa*  /tmp
+# No key available
+# cp ./../top/id_rsa*  /tmp
 
 # First add in a new user:
 sudo adduser michael
@@ -37,16 +36,30 @@ echo 'AllowUsers root michael' >> sshd_config
 # Any time you change the sshd_config file you must run this command:
 sudo systemctl restart sshd.service
 
-#Then add them to the sudoers group
+# Then add them to the sudoers group
 usermod -aG sudo michael
 
 cp /tmp/.bash_aliases /home/michael
+cd /home/michael
+sudo chown michael .bash_aliases
+sudo chgrp michael .bash_aliases
 
-# No keys
+# No key available
 # cp /tmp/id_rsa* /home/michael/.ssh
 #
+cd /home/michael/.ssh
+sudo chown michael id_*
+sudo chgrp michael id_*
+
 git config --global user.email stormasm@gmail.com
 git config --global user.name "Michael Angerman"
+
+#
+# No longer using the snap version of docker
+#
+# sudo groupadd docker
+# sudo usermod -aG docker michael
+# sudo systemctl restart snap.docker.dockerd.service
 
 # Relevant Links:
 # https://help.ubuntu.com/lts/serverguide/user-management.html.en
