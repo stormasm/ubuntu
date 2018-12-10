@@ -37,7 +37,10 @@ alias mod2d='kubectl get deployments'
 alias mod2e='kubectl proxy'
 
 alias mod2f='curl http://localhost:8001/version'
-alias mod2g="export POD_NAME=$(kubectl get pods -o go-template --template '{{rangeitems}}{{.metadata.name}}{{"\n"}}{{end}}')"
+
+##
+#alias mod2g="export POD_NAME=$(kubectl get pods -o go-template --template '{{rangeitems}}{{.metadata.name}}{{"\n"}}{{end}}')"
+
 alias mod2h='echo Name of the Pod: $POD_NAME'
 alias mod2i='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
 
@@ -47,7 +50,8 @@ alias kcrun='kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kuber
 
 alias kversion='curl http://localhost:8001/version'
 
-alias expodname="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+##
+#alias expodname="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
 
 alias curlpodname='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
 
@@ -61,7 +65,9 @@ alias mod3c='kubectl describe pods'
 
 alias mod3d='kubectl proxy''
 
-alias mod3e="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+##
+#alias mod3e="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+
 alias mod3f='echo Name of the Pod: $POD_NAME'
 alias mod3g='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
 alias mod3h='kubectl logs $POD_NAME'
@@ -73,7 +79,8 @@ alias mod3m='exit'
 
 ### module 3 more generic version of the commands
 
-alias expodname="export POD_NAME=\$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+##
+#alias expodname="export POD_NAME=\$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
 
 alias echopodname='echo Name of the Pod: $POD_NAME'
 
