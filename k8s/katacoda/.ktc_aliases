@@ -1,12 +1,17 @@
+### basic katacoda
 
 alias kc='kubectl'
+
+alias getub='git clone https://github.com/stormasm/ubuntu.git'
+
+### kick things off
 
 alias s1='sleep 1; launch.sh'
 
 alias kcgp='kubectl get pods'
 alias kcgs='kubectl get services'
 
-### Bootcamp
+### module 4 bootcamp
 
 alias kcdes='kubectl describe services/kubernetes-bootcamp'
 
@@ -16,11 +21,15 @@ alias exnp='export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-te
 
 alias curlnp='curl $(minikube ip):$NODE_PORT'
 
+
+### -------------------------------------------------------
+###       Everything below here is .bash_aliases
+### -------------------------------------------------------
+
 # Golang aliases
 
 alias gop='export GOPATH=${PWD}; export GOBIN=${PWD}/bin; PATH=$PATH:$GOPATH/bin'
 alias gopc='env | grep GOPATH'
-
 
 # User specific aliases and functions
 
@@ -62,15 +71,6 @@ alias t=date
 alias upgrade='sudo apt-get -y upgrade'
 alias y='yarn'
 
-### k8s specific commands
-
-alias ub='cd /mnt/k8s/ubuntu'
-alias ubc='cd /mnt/k8sc1/ubuntu'
-alias ubc1='cd /mnt/k8sc1/ubuntu'
-alias k8s='cd /mnt/k8s'
-alias k8sc='cd /mnt/k8sc1'
-alias k8sc1='cd /mnt/k8sc1'
-
 ### git commands
 
 alias jjj='git push origin master'
@@ -101,6 +101,3 @@ alias dinfo='docker info'
 alias dkill='docker kill'
 alias dps='docker ps'
 alias drm='docker rm'
-
-alias dredis='docker run --name rediserver -d redis'
-alias dredisc='docker run -it --link rediserver:redis --rm redis redis-cli -h redis -p 6379'
