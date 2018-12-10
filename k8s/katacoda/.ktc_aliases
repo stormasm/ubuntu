@@ -15,7 +15,7 @@ alias kcgs='kubectl get services'
 
 alias kcdes='kubectl describe services/kubernetes-bootcamp'
 
-alias exdeploy='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port8080'
+alias exdeploy='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080'
 
 alias exnp="export NODE_PORT=\$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}\')"
 
