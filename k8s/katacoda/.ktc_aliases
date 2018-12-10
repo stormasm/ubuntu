@@ -34,8 +34,12 @@ alias curlpodname='curl http://localhost:8001/api/v1/namespaces/default/pods/$PO
 alias expodname="export POD_NAME=\$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
 
 alias echopodname='echo Name of the Pod: $POD_NAME'
-alias kclogpod='kubectl logs $POD_NAME'
 
+alias curlpodname="curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/"
+
+alias kclogpod='kubectl logs \$POD_NAME'
+
+alias kcenv='kubectl exec \$POD_NAME env'
 
 ### module 4 bootcamp
 
