@@ -41,6 +41,8 @@ alias kclogpod='kubectl logs \$POD_NAME'
 
 alias kcenv='kubectl exec \$POD_NAME env'
 
+alias kcexec='kubectl exec -ti \$POD_NAME bash'
+
 ### module 4 bootcamp
 
 alias kcdes='kubectl describe services/kubernetes-bootcamp'
