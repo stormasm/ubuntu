@@ -18,8 +18,30 @@ alias kcgs='kubectl get services'
 
 alias kproxy='kubectl proxy'
 
+### Module 1 create a cluster
+
+alias mod1a='minikube version'
+alias mod1b='minikube start'
+alias mod1c='kubectl version'
+alias mod1d='kubectl cluster-info'
+alias mod1e='kubectl get nodes'
 
 ### module 2 deploy an app
+
+alias mod2a='sleep 1; launch.sh'
+alias mod2b='kubectl get nodes --help'
+alias mod2c='kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080'
+alias mod2d='kubectl get deployments'
+
+### In a second terminal run this command
+alias mod2e='kubectl proxy'
+
+alias mod2f='curl http://localhost:8001/version'
+alias mod2g="export POD_NAME=$(kubectl get pods -o go-template --template '{{rangeitems}}{{.metadata.name}}{{"\n"}}{{end}}')"
+alias mod2h='echo Name of the Pod: $POD_NAME'
+alias mod2i='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
+
+### Module 2 more generic version of the commands
 
 alias kcrun='kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080'
 
@@ -30,6 +52,26 @@ alias expodname="export POD_NAME=$(kubectl get pods -o go-template --template '{
 alias curlpodname='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
 
 ### module 3
+
+alias mod3a='sleep 1; launch.sh'
+alias mod3b='kubectl get pods'
+alias mod3c='kubectl describe pods'
+
+### In another terminal
+
+alias mod3d='kubectl proxy''
+
+alias mod3e="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+alias mod3f='echo Name of the Pod: $POD_NAME'
+alias mod3g='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
+alias mod3h='kubectl logs $POD_NAME'
+alias mod3i='kubectl exec $POD_NAME env'
+alias mod3j='kubectl exec -ti $POD_NAME bash'
+alias mod3k='cat server.js'
+alias mod3l='curl localhost:8080'
+alias mod3m='exit'
+
+### module 3 more generic version of the commands
 
 alias expodname="export POD_NAME=\$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
 
@@ -44,6 +86,8 @@ alias kcenv='kubectl exec \$POD_NAME env'
 alias kcexec='kubectl exec -ti \$POD_NAME bash'
 
 ### module 4 bootcamp
+
+### module 4 more generic use of the commands
 
 alias kcdes='kubectl describe services/kubernetes-bootcamp'
 
