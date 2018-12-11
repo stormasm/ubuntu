@@ -1,0 +1,25 @@
+
+### module 4 exposing your app
+
+alias mod4a='kubectl get pods'
+alias mod4b='kubectl get services'
+alias mod4c='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port8080'
+alias mod4d='kubectl get services'
+alias mod4e='kubectl describe services/kubernetes-bootcamp'
+
+alias mod4f="export NODE_PORT=$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')"
+alias mod4g='echo NODE_PORT=$NODE_PORT'
+alias mod4h='curl $(minikube ip):$NODE_PORT'
+alias mod4i='kubectl describe deployment'
+alias mod4j='kubectl get pods -l run=kubernetes-bootcamp'
+alias mod4k='kubectl get services -l run=kubernetes-bootcamp'
+alias mod4l="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+alias mod4m='echo Name of the Pod: $POD_NAME'
+alias mod4n='kubectl label pod $POD_NAME app=v1'
+alias mod4o='kubectl describe pods $POD_NAME'
+alias mod4p='kubectl get pods -l app=v1'
+alias mod4q='kubectl delete service -l run=kubernetes-bootcamp'
+
+### This next command should now fail...
+alias mod4r='kubectl get services'
+alias mod4s='kubectl exec -ti $POD_NAME curl localhost:8080'
