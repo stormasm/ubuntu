@@ -1,0 +1,136 @@
+### basic katacoda
+
+alias kc='kubectl'
+
+alias getub='git clone https://github.com/stormasm/ubuntu.git'
+
+### kick things off
+
+alias s1='sleep 1; launch.sh'
+
+alias kcci='kubectl cluster-info'
+alias kcgd='kubectl get deployments'
+
+alias kcgp='kubectl get pods'
+alias kcdp='kubectl describe pods'
+
+alias kcgs='kubectl get services'
+
+alias kproxy='kubectl proxy'
+
+
+### module 2 deploy an app
+
+alias kcrun='kubectl run kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1 --port=8080'
+
+alias kversion='curl http://localhost:8001/version'
+
+alias expodname="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+
+alias curlpodname='curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/'
+
+### module 3
+
+alias expodname="export POD_NAME=\$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+
+alias echopodname='echo Name of the Pod: $POD_NAME'
+
+alias curlpodname="curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/proxy/"
+
+alias kclogpod='kubectl logs \$POD_NAME'
+
+alias kcenv='kubectl exec \$POD_NAME env'
+
+alias kcexec='kubectl exec -ti \$POD_NAME bash'
+
+### module 4 bootcamp
+
+alias kcdes='kubectl describe services/kubernetes-bootcamp'
+
+alias exdeploy='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080'
+
+alias exnp="export NODE_PORT=\$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')"
+alias exnpck="echo NODE_PORT=\$NODE_PORT"
+
+alias curlnp='curl $(minikube ip):$NODE_PORT'
+
+
+### -------------------------------------------------------
+###       Everything below here is .bash_aliases
+### -------------------------------------------------------
+
+# Golang aliases
+
+alias gop='export GOPATH=${PWD}; export GOBIN=${PWD}/bin; PATH=$PATH:$GOPATH/bin'
+alias gopc='env | grep GOPATH'
+
+# User specific aliases and functions
+
+alias c='clear'
+alias cp='cp -p'
+alias cpba='cp .bash_aliases /home/michael/; source .bash_aliases'
+alias cpbar='cp /home/michael/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases; source .bash_aliases'
+alias e='emacs'
+alias gs='git status'
+alias h='history'
+alias hc='history -c'
+alias l='ls -l'
+alias lt='ls -lt'
+
+alias g='go run'
+alias grh='grep -RH'
+
+alias hclear='history -c'
+alias l='ls -l'
+alias lm='ls -l | more'
+alias lr='ls -lR'
+alias lsd='ls -d */'
+alias lsg='ls -lR !(.git)'
+alias lsr='ls -lR'
+alias lss='ls -lS | more'
+alias lt='ls -lt'
+alias ltm='ls -lt | more'
+alias lo='exit'
+alias m='make'
+
+alias n='node'
+alias p='python'
+alias r='ruby'
+alias redisc='redis-cli'
+
+alias sp='source .bash_aliases'
+alias spme='source ~/.bash_aliases'
+alias t=date
+alias upgrade='sudo apt-get -y upgrade'
+alias y='yarn'
+
+### git commands
+
+alias jjj='git push origin master'
+alias kkk='git push origin gh-pages'
+
+alias ga='git add'
+alias gb='git branch'
+alias gc='git clone'
+alias gco='git checkout'
+alias gcobp1='git checkout -b bp1 master'
+alias gcobp2='git checkout -b bp2 bp1'
+alias gcom='git commit -m'
+alias gcomm='git commit -m'
+alias gd='git diff'
+alias gll='gem list --local'
+alias gl='git log'
+alias gp='git pull'
+alias gsl='git log --stat'
+alias gls='git log --stat'
+alias gpo='git push origin'
+alias grso='git remote show origin'
+alias gs='git status'
+alias gitsubmodule='git submodule update --init --recursive'
+
+### Docker commands
+
+alias dinfo='docker info'
+alias dkill='docker kill'
+alias dps='docker ps'
+alias drm='docker rm'
