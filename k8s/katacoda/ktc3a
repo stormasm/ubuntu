@@ -3,7 +3,7 @@
 
 alias mod4a='kubectl get pods'
 alias mod4b='kubectl get services'
-alias mod4c='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port8080'
+alias mod4c='kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080'
 alias mod4d='kubectl get services'
 alias mod4e='kubectl describe services/kubernetes-bootcamp'
 
