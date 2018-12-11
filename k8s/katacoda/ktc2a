@@ -43,7 +43,7 @@ alias mod3c='kubectl describe pods'
 
 ### In another terminal
 
-alias mod3d='kubectl proxy''
+alias mod3d='kubectl proxy'
 
 ##
 ##alias mod3e="export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
