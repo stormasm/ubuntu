@@ -4,7 +4,6 @@
 alias gop='export GOPATH=${PWD}; export GOBIN=${PWD}/bin; PATH=$PATH:$GOPATH/bin'
 alias gopc='env | grep GOPATH'
 
-
 # User specific aliases and functions
 
 alias c='clear'
@@ -15,6 +14,7 @@ alias e='emacs'
 alias gs='git status'
 alias h='history'
 alias hc='history -c'
+alias kc='kubectl'
 alias l='ls -l'
 alias lt='ls -lt'
 
