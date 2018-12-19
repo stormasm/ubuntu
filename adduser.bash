@@ -47,6 +47,13 @@ cd /home/michael/.ssh
 sudo chown michael id_*
 sudo chgrp michael id_*
 
+##
+#   This command needs to be run last
+#   because it takes you out of sudo mode
+##
+
+su -l michael
+
 git config --global user.email stormasm@gmail.com
 git config --global user.name "Michael Angerman"
 
