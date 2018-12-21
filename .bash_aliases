@@ -87,3 +87,25 @@ alias drm='docker rm'
 
 alias dredis='docker run --name rediserver -d redis'
 alias dredisc='docker run -it --link rediserver:redis --rm redis redis-cli -h redis -p 6379'
+
+### microk8s commands
+#
+
+alias mkinstall='snap install microk8s --classic'
+alias mkstatus='microk8s.status'
+
+# Stopping and Restarting MicroK8s
+# You may wish to temporarily shutdown MicroK8s when not in use without un-installing it.
+# MicroK8s can be shutdown with:
+
+alias mkstop='microk8s.stop'
+
+# MicroK8s can be restarted later with:
+
+alias mkstart='microk8s.start'
+
+# Removing MicroK8s
+# Before removing MicroK8s, use microk8s.reset to stop all running pods.
+
+alias mkreset='microk8s.reset'
+alias mkremove='snap remove microk8s'
