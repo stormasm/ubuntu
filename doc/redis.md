@@ -33,3 +33,18 @@ sudo systemctl stop redis-server
 ##### Kubernetes Links
 
 [Use Port Forwarding to Access Applications in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster/)
+
+If you do not feel like doing a port forward you can simply
+go into the pod in the cluster
+
+##### How to get into the pod in the container
+
+```
+kc get pods
+```
+
+Then use the name from the pod to run the following command
+
+```
+kc exec -it podname -- /bin/bash
+```
