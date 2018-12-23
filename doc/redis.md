@@ -19,6 +19,8 @@ To turn on having redis start at boot time:
 sudo systemctl enable redis-server
 ```
 
+To start and stop redis
+
 ```
 sudo systemctl start redis-server
 sudo systemctl stop redis-server
