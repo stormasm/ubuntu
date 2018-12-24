@@ -60,16 +60,16 @@ After you get the binaries the first thing to do is
 https://kubernetes.io/docs/setup/cri/
 
 Install Docker
-By running this script
+[By running this script](https://github.com/stormasm/ubuntu/blob/master/k8s/adddocker.bash)
 
 Install CRI-O
-By running this script
+[By running this script](https://github.com/stormasm/ubuntu/blob/master/k8s/addcrio.bash)
 
 Install kubeadm, kubelet, and kubectl
-By running this script
+[By running this script](https://github.com/stormasm/ubuntu/blob/master/k8s/addk8s.bash)
 
 Now run
-kubeadm init
+[kubeadm init](https://kubernetes.io/docs/setup/independent/create-cluster-kubeadm/)
 
 
 CRI-O Notes
