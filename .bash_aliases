@@ -93,6 +93,7 @@ alias dredisc='docker run -it --link rediserver:redis --rm redis redis-cli -h re
 
 alias mkinstall='snap install microk8s --classic'
 alias mkstatus='microk8s.status'
+alias mkstat='microk8s.status'
 
 # Stopping and Restarting MicroK8s
 # You may wish to temporarily shutdown MicroK8s when not in use without un-installing it.
