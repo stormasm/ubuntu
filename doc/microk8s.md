@@ -2,10 +2,7 @@
 ### To bring up microk8s
 
 ```
-mkinstall
-snap alias microk8s.kubectl kubectl
-mkstatus --wait-ready
-mkstatus
+bash addk8s-microk8s.bash
 ```
 
 ### If deploying redis
