@@ -45,12 +45,12 @@ kubeadm join 104.248.183.245:6443 --token hj3ncv.7aflhzeogf1y0bz7 --discovery-to
 
 ##### k8s master droplet
 
-machine name = k8s-master
+machine name = k8s-master   
 volume name = k8s 2Gig
 
 ##### k8s client droplet
 
-machine name = k8s-client1
+machine name = k8s-client1   
 volume name = k8sc1 1Gig
 
 
