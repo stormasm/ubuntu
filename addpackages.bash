@@ -4,8 +4,9 @@
 # Run this file as the root user
 #
 
-sudo apt-get update
+sudo apt update
 sudo apt -y install emacs25-nox
+sudo apt -y install nginx
 sudo apt -y install redis-server
 sudo apt -y install zip
 sudo apt -y install unzip
