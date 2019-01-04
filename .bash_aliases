@@ -45,6 +45,11 @@ alias t=date
 alias upgrade='sudo apt-get -y upgrade'
 alias y='yarn'
 
+### nginx specific commands
+
+alias ngstart='sudo systemctl start nginx'
+alias ngstop='sudo systemctl stop nginx'
+
 ### k8s specific commands
 
 alias ub='cd /mnt/k8s/ubuntu'
