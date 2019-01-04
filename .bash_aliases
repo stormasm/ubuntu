@@ -51,6 +51,7 @@ alias ngstart='sudo systemctl start nginx'
 alias ngstop='sudo systemctl stop nginx'
 alias ngrestart='sudo systemctl restart nginx'
 alias ngreload='sudo systemctl reload nginx'
+alias ngtest='sudo nginx -t'
 
 ### k8s specific commands
 
