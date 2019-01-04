@@ -25,3 +25,5 @@ addcrio.bash
 ```
 addk8s.bash
 ```
+
+ok friday
