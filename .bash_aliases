@@ -77,6 +77,8 @@ alias gpo='git push origin'
 alias grso='git remote show origin'
 alias gs='git status'
 alias gitsubmodule='git submodule update --init --recursive'
+alias ghme='git config --global user.email stormasm@gmail.com;
+git config --global user.name "Michael Angerman"'
 
 ### Docker commands
 
