@@ -10,9 +10,6 @@
 #
 cp .bash_aliases /tmp
 
-### delete
-# cp ./../top/id_rsa*  /tmp
-
 # First add in a new user:
 sudo adduser michael
 
@@ -44,21 +41,12 @@ cd /home/michael
 sudo chown michael .bash_aliases
 sudo chgrp michael .bash_aliases
 
-### delete
-# cp /tmp/id_rsa* /home/michael/.ssh
-# cd /home/michael/.ssh
-# sudo chown michael id_*
-# sudo chgrp michael id_*
-
 ##
 #   This command needs to be run last
 #   because it takes you out of sudo mode
 ##
 
 su -l michael
-
-git config --global user.email stormasm@gmail.com
-git config --global user.name "Michael Angerman"
 
 #
 # No longer using the snap version of docker
