@@ -26,5 +26,6 @@ addcrio.bash
 addk8s.bash
 ```
 
-ok friday 01
+ok friday 02
+
 
