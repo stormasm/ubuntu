@@ -9,7 +9,9 @@
 # Copy this file to a known location
 #
 cp .bash_aliases /tmp
-cp ./../top/id_rsa*  /tmp
+
+### delete
+# cp ./../top/id_rsa*  /tmp
 
 # First add in a new user:
 sudo adduser michael
@@ -42,10 +44,11 @@ cd /home/michael
 sudo chown michael .bash_aliases
 sudo chgrp michael .bash_aliases
 
-cp /tmp/id_rsa* /home/michael/.ssh
-cd /home/michael/.ssh
-sudo chown michael id_*
-sudo chgrp michael id_*
+### delete
+# cp /tmp/id_rsa* /home/michael/.ssh
+# cd /home/michael/.ssh
+# sudo chown michael id_*
+# sudo chgrp michael id_*
 
 ##
 #   This command needs to be run last
