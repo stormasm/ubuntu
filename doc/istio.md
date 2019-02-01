@@ -10,10 +10,16 @@ cd k8s
 bash micro.bash
 ```
 
-Copy .profile over to michael and root
-
-Check to make sure istioctl can be found on the path
-
 [Istio Quick Start](https://istio.io/docs/setup/kubernetes/quick-start/)
 
+  * Install Istio’s Custom Resource Definitions via kubectl apply
+  * Then run Option 1
+  * Verify the application
+
 [Deploy the Sleep App](https://istio.io/docs/setup/kubernetes/sidecar-injection/#deploying-an-app)
+
+##### Put istioctl on your path
+
+ * Copy .profile over to michael and root
+
+ * Check to make sure istioctl can be found on the path
