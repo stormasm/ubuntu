@@ -16,6 +16,12 @@ adduser.bash
 adddocker.bash
 ```
 
+#### Script to Add [Microk8s](https://microk8s.io/)
+```
+cd k8s
+micro.bash
+```
+
 #### Script to Add the Container Runtime Interface [CRIO](https://kubernetes.io/docs/setup/cri/)
 ```
 addcrio.bash
@@ -25,7 +31,3 @@ addcrio.bash
 ```
 addk8s.bash
 ```
-
-ok wed 04
-
-
