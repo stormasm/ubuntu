@@ -10,7 +10,11 @@ alias c='clear'
 alias cp='cp -p'
 alias cpba='cp .bash_aliases /home/michael/; source .bash_aliases'
 alias cpbar='cp /home/michael/.bash_aliases .; chown root .bash_aliases; chgrp root .bash_aliases; source .bash_aliases'
+
 alias dock='sudo docker'
+alias mdock='microk8s.docker'
+alias mdocker='microk8s.docker'
+
 alias e='emacs'
 alias gs='git status'
 alias h='history'
