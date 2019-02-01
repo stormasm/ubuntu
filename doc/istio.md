@@ -1,6 +1,8 @@
 
 ### Looks like 4G of memory works really well...
 
+All of the commands on this page get run as ROOT.
+
 ```
 bash addemacs.bash
 
