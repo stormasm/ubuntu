@@ -22,12 +22,20 @@ wget https://gcsweb.istio.io/gcs/istio-prerelease/daily-build/release-1.1-latest
 tar xzf filename
 ```
 
+Run **helm template** if you do not already have istio.yaml or you want a new version of it.
+
 ```
 helm template istio --name istio --namespace istio-system > istio.yaml
+```
+
+Then run these 2 commands to kick everything off...
+
+```
 kubectl create namespace istio-system
 kubectl apply -f istio.yaml
 ```
 
+##### Set and download the version you want to get
 
 ```
 cd /mnt/k8sc1/tmp
@@ -36,21 +44,11 @@ curl -L https://git.io/getLatestIstio | sh -
 cd version
 ```
 
+##### References
 
 [Install with Helm](https://istio.io/docs/setup/kubernetes/helm-install/#option-1-install-with-helm-via-helm-template)
 
-```
-helm template install/kubernetes/helm/istio --name istio --namespace istio-system > $HOME/istio.yaml
-
-kubectl create namespace istio-system
-kubectl apply -f $HOME/istio.yaml
-```
-
 [Istio Quick Start](https://istio.io/docs/setup/kubernetes/quick-start/)
-
-  * Install Istio’s Custom Resource Definitions via kubectl apply
-  * Then run Option 1
-  * Verify the application
 
 [Deploy the Sleep App](https://istio.io/docs/setup/kubernetes/sidecar-injection/#deploying-an-app)
 
