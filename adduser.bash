@@ -41,6 +41,15 @@ cd /home/michael
 sudo chown michael .bash_aliases
 sudo chgrp michael .bash_aliases
 
+#
+#  Go back to the starting point
+#  Where the script started out
+#
+#  Add in the logic to see if k8sc1 exists
+#
+
+cd /mnt/k8sc1/ubuntu
+
 ##
 #   This command needs to be run last
 #   because it takes you out of sudo mode
