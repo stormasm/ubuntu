@@ -15,7 +15,9 @@ cp /mnt/k8sc1/helm/linux-amd64/helm /usr/local/bin
 cd /mnt/k8sc1/tmp
 ```
 
-Get the daily charts if you don't have them already
+Get the
+[daily charts from here](https://gcsweb.istio.io/gcs/istio-prerelease/daily-build/release-1.1-latest-daily)
+if you don't have them already
 
 ```
 wget https://gcsweb.istio.io/gcs/istio-prerelease/daily-build/release-1.1-latest-daily/charts/istio-1.1.0.tgz
