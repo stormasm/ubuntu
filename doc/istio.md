@@ -79,5 +79,5 @@ wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar
 ##### How to get the latest binary version of helm for mac
 
 ```
-wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-darwin-amd64.tar.gz
+curl https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-darwin-amd64.tar.gz --output helm.tar.gz
 ```
