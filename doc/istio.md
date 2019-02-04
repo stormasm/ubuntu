@@ -12,7 +12,6 @@ cd k8s
 bash micro.bash
 
 cp /mnt/k8sc1/helm/linux-amd64/helm /usr/local/bin
-cd /mnt/k8sc1/tmp
 ```
 
 Get the
@@ -27,6 +26,7 @@ tar xzf filename
 Run **helm template** if you do not already have istio.yaml or you want a new version of it.
 
 ```
+cd /mnt/k8sc1/istio-charts
 helm template istio --name istio --namespace istio-system > istio.yaml
 ```
 
@@ -34,6 +34,8 @@ Then run these 2 commands to kick everything off...
 
 ```
 kubectl create namespace istio-system
+
+cd /mnt/k8sc1/istio-charts
 kubectl apply -f istio.yaml
 ```
 
