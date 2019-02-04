@@ -70,8 +70,14 @@ Check to make sure it got there...
 helm version
 ```
 
-##### How to get the latest binary version of helm
+##### How to get the latest binary version of helm for linux
 
 ```
 wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-linux-amd64.tar.gz
+```
+
+##### How to get the latest binary version of helm for mac
+
+```
+wget https://storage.googleapis.com/kubernetes-helm/helm-v2.12.3-darwin-amd64.tar.gz
 ```
