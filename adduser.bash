@@ -45,8 +45,11 @@ sudo chgrp michael .bash_aliases
 #   This command needs to be run last
 #   because it takes you out of sudo mode
 ##
-
-su -l michael
+#
+#   It is now not clear I want to run this next command
+#
+#   su -l michael
+#
 
 #
 # No longer using the snap version of docker
