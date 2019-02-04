@@ -81,3 +81,10 @@ helm version
 [Istio Quick Start](https://istio.io/docs/setup/kubernetes/quick-start/)
 
 [Deploy the Sleep App](https://istio.io/docs/setup/kubernetes/sidecar-injection/#deploying-an-app)
+
+```
+kubectl apply -f samples/sleep/sleep.yaml
+kubectl get deployment -o wide
+kubectl get pod
+kubectl describe pod sleep-776b7bcdcd-bhn9m
+```
